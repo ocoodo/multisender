@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Multisend - Cross posting</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multisend</h1>
+        <form action="/send" method="post">
+            <div class="field">
+                <label for="text">Post text</label>
+                <textarea name="text" id="text" required></textarea>
+            </div>
+            <div class="field">
+                <label for="providers">Providers (ctrl/cmd for multiple)</label>
+                <select name="providers" id="providers" multiple required>
+                    <option value="telegram">Telegram</option>
+                </select>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
